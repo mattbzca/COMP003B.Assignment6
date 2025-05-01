@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.VisualBasic;
 namespace COMP003B.Assignment6.Models
 {
     public class Book
@@ -9,5 +10,7 @@ namespace COMP003B.Assignment6.Models
         public string Title { get; set; }
 
         public virtual ICollection<BookAuthor>? BookAuthors { get; set; }
+
+        public DateTime Date { get; set; } 
     }
 }
